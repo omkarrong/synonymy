@@ -1,0 +1,10 @@
+{
+  "name": "Synonymy",
+  "short_name": "Synonymy",
+  "description": "A simple app to get synonyms for a given word.",
+  "lang": "en-GB",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#388E3C",
+  "background_color": "#F5F5F5"
+}
