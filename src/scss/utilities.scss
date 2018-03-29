@@ -1,0 +1,45 @@
+/*=============================================>>>>>
+= Custom Utility classes =
+= Stuff that isn't in basscss.
+===============================================>>>>>*/
+
+.bg-grey { background: $color-grey; }
+.bg-white { background: white; }
+.bg-red { background: $color-red; }
+.txblack { color: $color-black; }
+.txgrey { color: $color-grey; }
+.txred { color: $color-red; }
+.txdark-grey { color: $color-dark-grey; }
+.txwhite { color: white; }
+.tx5 { font-size: .5rem; }
+.tx6 { font-size: .6rem; }
+.tx7 { font-size: .7rem; }
+.tx8 { font-size: .8rem; }
+.tx9 { font-size: .9rem; }
+.tx1 { font-size: 1rem; }
+.tx11 { font-size: 1.1rem; }
+.tx12 { font-size: 1.2rem; }
+.tx14 { font-size: 1.4rem; }
+.tx16 { font-size: 1.6rem; }
+.tx18 { font-size: 1.8rem; }
+.tx20 { font-size: 2rem; }
+.tx22 { font-size: 2.2rem; }
+.tx24 { font-size: 2.4rem; }
+.tx26 { font-size: 2.6rem; }
+.tx30 { font-size: 3rem; }
+.txlight { font-weight: 300; }
+.txregular { font-weight: 400; }
+.txbold { font-weight: 500; }
+.line-through { text-decoration: line-through; }
+.txshadow { text-shadow: 1px 1px 0 rgba(0, 0, 0, .3); }
+.ls1 { letter-spacing: 1px; }
+.ls2 { letter-spacing: 2px; }
+.ls3 { letter-spacing: 3px; }
+.disabled { filter: grayscale(1); }
+.capitalize { text-transform: capitalize; }
+
+/* Layout grid style utilities */
+
+.fixed-width-container {
+  max-width: 1200px;
+}

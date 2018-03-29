@@ -1,0 +1,16 @@
+.home-component {
+
+  button {
+    background-color: seagreen;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 0 4px 4px 0;
+    width: 100%;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 4px 0 0 4px;
+  }
+}

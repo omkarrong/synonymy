@@ -1,0 +1,78 @@
+@import "variables.scss";
+@import "utilities.scss";
+
+
+html {
+  height: 100%;
+  box-sizing: border-box; // Setting default
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0 0 0 0;
+  font-size: 16px; // Base font size.
+  font-family: $font-roboto;
+  color: $color-black; // Global black color
+  background-color: $color-grey;  
+}
+
+select {
+  font-family: $font-roboto;
+}
+
+p {
+  margin: 0;
+  color: $color-black; // NOTE: Defining global to match current production site.
+  line-height: $line-height-default;
+}
+
+::selection {
+  color: $cornflower;
+  background-color: $color-grey;
+}
+
+/* GLOBAL Button Styles */
+
+button {
+  font-family: 'Roboto', sans-serif;
+  box-shadow: none;
+  font-weight: $font-medium;
+  border: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* END GLOBAL Button Styles */
+
+/* GLOBAL input styles */
+
+input[type="text"] {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+/* END GLOBAL input styles */
+
+/* GLOBAL Card styles */
+
+.card {
+  background: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+}
+
+/* END GLOBAL Card styles */

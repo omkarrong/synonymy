@@ -1,0 +1,38 @@
+<div class="home-component clearfix p2">
+  <h3 class="center m0">{{title}}</h3>
+  <p class="center tx9">Enter a word to look up it's synonyms</p>
+  <br>
+  <form class="center">
+    <div class="col col-10">
+      <input type="text" class="p1" name="word" v-model="word" placeholder="Enter a word" id="">
+    </div>
+    <div class="col col-2">
+      <button type="button" class="p1" :disabled="!word" @click="getSynonyms">Go</button>
+    </div>
+  </form>
+  <br>
+  <section class="clearfix col col-12" v-if="loading">
+    <p class="my2 center">Loading</p>
+  </section>
+  <section class="clearfix col col-12 mt2" v-if="!loading && wordTypes">
+    <p class="center m0 line-height-1">
+      <span class="txbold tx12 capitalize">{{word}}</span>
+    </p>
+    <p class="center m0 line-height-1">
+      <span class="tx9">{{wordTypes.join(', ')}}</span>
+    </p>
+  </section>
+  <section class="clearfix col col-12" v-if="!loading && responseObject">
+    <ul class="list-reset mt0" v-if="!loading && synonyms">
+      <div v-for="list in responseObject">
+        <span class="txred">{{list}}</span>
+        <li class="my1 capitalize" v-for="item in list">
+          {{item}}
+        </li>
+      </div>
+    </ul>
+  </section>
+  <section class="center clearfix col col-12" v-if="!loading && !synonyms">
+    <p class="my2">Couldn't find any :/</p>
+  </section>
+</div>
